@@ -1,1 +1,15 @@
-<p>header works!</p>
+<header class="app-header">
+  <!--
+    Colocamos direto assets/logo.png por causa do ssr
+    utilizamos também ngSrc para evitar demora no carregamento
+  -->
+
+  <!--
+    priority = boolean
+    essa respeita qual imagem é a mais importante de se aparecer
+
+    loading="..." -> eager, auto, lazy
+    loading serve para verificar a velocidade que a imagem vai carregar na tela
+  -->
+  <img ngSrc="assets/logo.png" width="250" height="100"/>
+</header>
